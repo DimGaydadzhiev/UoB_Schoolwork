@@ -1,0 +1,37 @@
+package Lab5AB;
+
+class Student {
+
+    static int studentNum;
+    Course crs;
+
+    String name;
+    int age;
+    String patTeach;
+    int id;
+
+    public Student(String name, int age, String patTeach, int id) {
+        this.name = name;
+        this.age = age;
+        this.patTeach = patTeach;
+        this.id = id;
+    }
+
+    public void printSInfo() {
+
+        System.out.println("The student's name is: " + name);
+        System.out.println("They are: " + age + " years old");
+        System.out.println("Their PAT is: " + patTeach);
+        System.out.println("The student's ID is: " + id);
+
+    }
+
+    public void progressYear() {
+        crs.yearsOfStudy++;
+    }
+
+    public void assignID(){
+        studentNum++;
+        id= studentNum;
+    }
+}
