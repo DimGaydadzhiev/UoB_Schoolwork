@@ -70,24 +70,24 @@ public class Lab4A {
         String inputData;
         int age;
 
-        while (true) {  
+        while (true) {
             System.out.println("Input your age: ");
             inputData = input.nextLine();
 
             if (inputData.equalsIgnoreCase("STOP"))
                 break;
 
-            if (inputData.equalsIgnoreCase("STUDENT")){
+            if (inputData.equalsIgnoreCase("STUDENT")) {
                 System.out.println("Student Rate");
                 break;
             }
 
             age = Integer.parseInt(inputData);
 
-            if (age <= 17)
-                System.out.println("Child Rate");
-            else if (age <= 5)
+            if (age <= 5)
                 System.out.println("Toddler Rate");
+            else if (age <= 17)
+                System.out.println("Child Rate");
             else if (age >= 60)
                 System.out.println("Senior Rate");
             else

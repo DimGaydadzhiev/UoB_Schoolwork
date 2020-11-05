@@ -166,7 +166,7 @@ public class Lab4B {
 
         for (int i = 0; i < testArra.length; i++) {
             int tempInd = i;
-            
+
             for (int j = i + 1; j < testArra.length; j++) {
 
                 if (testArra[j] < testArra[tempInd]) {
@@ -200,7 +200,7 @@ public class Lab4B {
             System.out.print(" " + sortedArra[k]);
         }
 
-        System.out.println("\n"+avrSum);
+        System.out.println("\n" + avrSum);
 
     }
 
