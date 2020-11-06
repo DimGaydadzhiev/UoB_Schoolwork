@@ -10,4 +10,7 @@ class Course {
         this.yearsOfStudy = yearsOfStudy;
     }
 
+    public void yearPlus(){
+        yearsOfStudy++;
+    }
 }

@@ -1,46 +1,51 @@
 package Lab5AB;
 
 import java.util.LinkedList;
-import java.util.Iterator;
+
 
 class Student {
 
     static int studentNum;
 
     LinkedList<Course> crsList = new LinkedList<Course>();
-        Iterator it= crsList.iterator();
 
     String name;
     int age;
     String patTeach;
     int id;
 
-    public Student(String name, int age, String patTeach, int id, int numCourses) {
+    public Student(String name, int age, String patTeach, int id) {
         this.name = name;
         this.age = age;
         this.patTeach = patTeach;
         this.id = id;
-        this.numCourses = numCourses;
+
     }
 
     public void printSInfo() {
+        short i=0;
 
         System.out.println("The student's name is: " + name);
         System.out.println("They are: " + age + " years old");
         System.out.println("Their PAT is: " + patTeach);
         System.out.println("The student's ID is: " + id);
-
-    }
-
-    public void progressYear() {
-      
-        while(it.hasNext()){
-            crsList.set(it, crsList);
-
+        System.out.println("The student's course info is: ");
+        while(i<crsList.size()){
+            System.out.println(crsList.get(i).programmeName);
+            System.out.println("And their year of study is "+ crsList.get(i).yearsOfStudy);
+            i++;
         }
 
     }
 
+    public void progressYear() {
+        int i = 0;
+        while (i < crsList.size()) {
+
+            crsList.get(i).yearPlus();
+            i++;
+        }
+    }
 
     public int assignID() {
         studentNum++;
@@ -49,7 +54,7 @@ class Student {
         return id;
     }
 
-    public void assignCourse() {
-
+    public void assignCourse(Course newCourse) {
+        crsList.add(newCourse);
     }
 }
