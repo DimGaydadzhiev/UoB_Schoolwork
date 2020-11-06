@@ -3,7 +3,7 @@ package Lab5AB;
 class Student {
 
     static int studentNum;
-    Course crs;
+    Course[] crs;
 
     String name;
     int age;
@@ -27,11 +27,17 @@ class Student {
     }
 
     public void progressYear() {
-        crs.yearsOfStudy++;
+        int i = 0;
+        while (i < crs.length) {
+            crs[i].yearsOfStudy++;
+            i++;
+        }
     }
 
-    public void assignID(){
+    public int assignID() {
         studentNum++;
-        id= studentNum;
+        id = studentNum;
+
+        return id;
     }
 }
