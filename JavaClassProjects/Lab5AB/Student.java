@@ -4,6 +4,7 @@ class Student {
 
     static int studentNum;
     Course[] crs;
+    int numCourses = 1;
 
     String name;
     int age;
@@ -39,5 +40,9 @@ class Student {
         id = studentNum;
 
         return id;
+    }
+
+    public void assignCourse() {
+
     }
 }
