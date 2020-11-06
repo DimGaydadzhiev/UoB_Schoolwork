@@ -1,21 +1,26 @@
 package Lab5AB;
 
+import java.util.LinkedList;
+import java.util.Iterator;
+
 class Student {
 
     static int studentNum;
-    Course[] crs;
-    int numCourses = 1;
+
+    LinkedList<Course> crsList = new LinkedList<Course>();
+        Iterator it= crsList.iterator();
 
     String name;
     int age;
     String patTeach;
     int id;
 
-    public Student(String name, int age, String patTeach, int id) {
+    public Student(String name, int age, String patTeach, int id, int numCourses) {
         this.name = name;
         this.age = age;
         this.patTeach = patTeach;
         this.id = id;
+        this.numCourses = numCourses;
     }
 
     public void printSInfo() {
@@ -28,12 +33,14 @@ class Student {
     }
 
     public void progressYear() {
-        int i = 0;
-        while (i < crs.length) {
-            crs[i].yearsOfStudy++;
-            i++;
+      
+        while(it.hasNext()){
+            crsList.set(it, crsList);
+
         }
+
     }
+
 
     public int assignID() {
         studentNum++;
