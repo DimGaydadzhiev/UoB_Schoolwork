@@ -29,8 +29,6 @@ public class Index {
         cohort[4].assignCourse(course[4]);
 
         System.out.println(Student.courseCount(cohort, "Physio"));
-        
-
 
     }
 }

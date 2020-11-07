@@ -1,12 +1,12 @@
 package Lab5AB;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 class Student {
 
     static int studentNum = 0;
 
-    LinkedList<Course> crsList = new LinkedList<Course>();
+    ArrayList<Course> crsList = new ArrayList<Course>();
 
     String name;
     int age;

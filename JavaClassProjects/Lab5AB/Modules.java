@@ -1,13 +1,13 @@
 package Lab5AB;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class Modules {
 
     static int moduleCount = 0;
     int moduleId;
     String moduleTitle;
-    LinkedList<String> moduleTeachers= new LinkedList<String>();
+    ArrayList<String> moduleTeachers= new ArrayList<String>();
 
     public Modules(String moduleTitle) {
         this.moduleTitle = moduleTitle;

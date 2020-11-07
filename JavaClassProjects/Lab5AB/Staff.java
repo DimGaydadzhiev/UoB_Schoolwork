@@ -1,12 +1,12 @@
 package Lab5AB;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 class Staff {
 
     static int staffCount=0;
 
-    LinkedList<Course> tCrsList = new LinkedList<Course>();
+    ArrayList<Course> tCrsList = new ArrayList<Course>();
 
     public void assignCourse(Course newCourse) {
         tCrsList.add(newCourse);

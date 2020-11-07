@@ -1,12 +1,12 @@
 package Lab5AB;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class University {
 
-    LinkedList<Student> stdntList = new LinkedList<Student>();
-    LinkedList<Staff> stffList = new LinkedList<Staff>();
-    LinkedList<Course> taughtCourses = new LinkedList<Course>();
+    ArrayList<Student> stdntList = new ArrayList<Student>();
+    ArrayList<Staff> stffList = new ArrayList<Staff>();
+    ArrayList<Course> taughtCourses = new ArrayList<Course>();
 
     static int stdntCount() {
         return Student.studentNum;
