@@ -1,31 +1,28 @@
 package Lab5AB;
 
-import java.util.Scanner;
+import java.util.LinkedList;
 
 class Staff {
 
-    static Scanner input = new Scanner(System.in);
+    static int staffCount=0;
 
-    private int modulesTaughtN;
-    private String[] modulesTaught = new String[modulesTaughtN];
+    LinkedList<Course> tCrsList = new LinkedList<Course>();
 
-    public Staff(int modulesTaughtN) {
-        this.modulesTaughtN = modulesTaughtN;
+    public void assignCourse(Course newCourse) {
+        tCrsList.add(newCourse);
     }
 
-    public void setMTaught(String tModule) {
+    public void printTModules() {
 
-        for (int i = 0; i < modulesTaughtN; i++) {
-            System.out.println("Input Module " + (i + 1) + "Name: ");
-            modulesTaught[i] = input.nextLine();
-        }
+        for (int i = 0; i < tCrsList.size(); i++)
+            System.out.println(tCrsList.get(i).programmeName);
 
     }
 
-    public void printMTaught() {
-        for (int i = 0; i < modulesTaughtN; i++) {
-            System.out.println(modulesTaught[i]);
-        }
-    }
+    static int setStaffID(){
+        staffCount++;
 
+        return staffCount;
+    }
+    
 }
