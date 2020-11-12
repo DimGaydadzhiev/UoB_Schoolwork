@@ -14,7 +14,7 @@ public class FunNum {
 
     static private boolean primeCheck(int num) {
 
-        for (int i = 1; i <= (num / 2); i++) {
+        for (int i = 2; i <= (num / 2); i++) {
             if (num % i == 0) {
                 return false;
             }
