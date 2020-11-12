@@ -1,6 +1,5 @@
 
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Random;
 
 public class testClass {
@@ -19,10 +18,12 @@ public class testClass {
         while (testList.size() > 0) {
 
             Random rand = new Random(0 - testList.size());
-
+            //a and b are for indexes
             a = rand.nextInt();
             b = rand.nextInt();
 
+
+            //e and c are for taking values
             e = testList.get(a);
             c = testList.get(b);
 
