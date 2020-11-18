@@ -12,6 +12,11 @@ class Box {
         this.volume = length * width * height;
     }
 
+    public Box(int length, int width){
+
+        
+    }
+
     public int getLength() {
         return this.length;
     }

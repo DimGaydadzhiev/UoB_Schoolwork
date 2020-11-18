@@ -1,45 +1,54 @@
 
 import java.util.LinkedList;
 import java.util.Random;
+import java.util.Scanner;
+import java.lang.Math;
 
 public class testClass {
 
     public static void main(String[] args) {
 
-        LinkedList<Integer> testList = new LinkedList<Integer>();
-        int a, b, sumab = 0;
-        int e, c;
 
-        for (int i = 1; i <= 49; i++) {
+        Scanner scan= new Scanner(System.in);
+        Random rand = new Random();
+        LinkedList<Integer> testList = new LinkedList<Integer>();
+        int indexA = 0, indexB = 0, sum = 0;
+        int valA=0, valB, cntr;
+        int n= scan.nextInt();
+
+        for (int i = 1; i <= 50; i++) {
+
             testList.add(i);
 
         }
 
-        while (testList.size() > 0) {
+        for (int j = 1; j < 50; j++) {
 
-            Random rand = new Random(0 - testList.size());
-            //a and b are for indexes
-            a = rand.nextInt();
-            b = rand.nextInt();
+            cntr = testList.size() - 1;
 
+            indexA = rand.nextInt(cntr);
+            valA = testList.get(indexA);
+            testList.remove(indexA);
 
-            //e and c are for taking values
-            e = testList.get(a);
-            c = testList.get(b);
+            cntr = testList.size() - 1;
 
-            if (a == b) {
-                testList.remove(a);
-
-            } else {
-                testList.remove(a);
-                testList.remove(b);
+            if (cntr < 1) {
+                sum = Math.abs(valA - testList.get(0));
+                break;
 
             }
 
-            sumab = a + b + sumab;
+            indexB = rand.nextInt(cntr);
+            valB = testList.get(indexB);
+            testList.remove(indexB);
+
+            sum = Math.abs(valA - valB);
+
+            testList.add(sum);
 
         }
 
+        System.out.println(sum);
     }
 
 }
