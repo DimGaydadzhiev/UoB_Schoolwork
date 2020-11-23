@@ -42,19 +42,23 @@ public class Index {
     }
 
     public static void main(String[] args) {
-        Index ind=new Index();
+        // Index ind=new Index();
+        //
+        // MapTile[][] map = new MapTile[5][9];
+        //
+        // for (int i = 0; i < map.length; i++) {
 
-        MapTile[][] map = new MapTile[5][9];
+        // for (int j = 0; j < map[0].length; j++) {
+        // map[i][j] = MapTile.EMPTY;
+        // }
 
-        for (int i = 0; i < map.length; i++) {
+        // map[3][1] = MapTile.GOLD;
+        // }
+        // ind.seekPrecious(map);
 
-            for (int j = 0; j < map[0].length; j++) {
-                map[i][j] = MapTile.EMPTY;
-            }
+            Walker wlkr= new Walker();
 
-            map[3][1] = MapTile.GOLD;
-        }
-        ind.seekPrecious(map);
+            System.out.println(wlkr.walk());
     }
 
 }

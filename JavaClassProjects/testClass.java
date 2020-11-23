@@ -8,21 +8,21 @@ public class testClass {
 
     public static void main(String[] args) {
 
-
-        Scanner scan= new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         Random rand = new Random();
         LinkedList<Integer> testList = new LinkedList<Integer>();
         int indexA = 0, indexB = 0, sum = 0;
-        int valA=0, valB, cntr;
-        int n= scan.nextInt();
+        int valA = 0, valB, cntr;
+        int n = scan.nextInt();
+        scan.close();
 
-        for (int i = 1; i <= 50; i++) {
+        for (int i = 1; i <= n; i++) {
 
             testList.add(i);
 
         }
 
-        for (int j = 1; j < 50; j++) {
+        for (int j = 1; j < n; j++) {
 
             cntr = testList.size() - 1;
 
