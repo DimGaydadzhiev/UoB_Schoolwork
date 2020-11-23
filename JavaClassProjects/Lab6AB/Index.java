@@ -25,6 +25,8 @@ public class Index {
         usersPet.setAll(correctName, correctAge, correctWeight);
         System.out.println("My updated records now say:");
         usersPet.writeOutput();
+
+        keyboard.close();
     }
 
 }

@@ -24,7 +24,7 @@ public class FunNum {
 
     static private boolean fibIntCheck(int num) {
 
-        int fibInt1 = 0, fibInt2 = 1, fibSum = 0, i = 0;
+        int fibInt1 = 0, fibInt2 = 1, fibSum = 0;
 
         while (fibSum <= num) {
             fibSum = fibInt1 + fibInt2;
