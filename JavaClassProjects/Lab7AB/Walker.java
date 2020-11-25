@@ -2,11 +2,20 @@ package Lab7AB;
 
 import java.util.Random;
 
+/**
+ * This class is an exercise. It generates a random path and traverses it.
+ */
 public class Walker {
 
     private Random rand = new Random();
 
     private Compass[] path = new Compass[15];
+
+    /**
+     * Traverses randomly generated path. Returns final vertical pos.
+     * 
+     * @return int
+     */
 
     public int walk() {
 
@@ -31,7 +40,7 @@ public class Walker {
                     break;
 
                 default: // This should never happen but you never know
-                    System.out.println("MORON"); // This is for testing purposes.
+                    System.out.println("MORON");
                     break;
 
             }

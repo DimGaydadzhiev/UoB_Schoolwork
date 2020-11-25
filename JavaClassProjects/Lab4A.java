@@ -96,7 +96,7 @@ public class Lab4A {
     }
 
     public static void main(String[] args) {
-        quest6();
+        quest4();
     }
 
 }

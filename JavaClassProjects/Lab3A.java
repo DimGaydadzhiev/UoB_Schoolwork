@@ -8,7 +8,7 @@ public class Lab3A {
         }
     }
 
-    public static int fibbonaci(int fibInt) {
+    public static int fibbonaci(int fibInt) { //Pretty self-explanatory.
 
         int fibInt1 = 0, fibInt2 = 1, fibIntFinal = 0, i = 0;
 
@@ -19,7 +19,7 @@ public class Lab3A {
             fibInt1 = fibInt2;
             fibInt2 = fibIntFinal;
         }
-        return fibIntFinal;
+        return fibInt1;
     }
 
     public static void main(String[] args) {
@@ -29,7 +29,7 @@ public class Lab3A {
         // String s1 = String.format("%8s", Integer.toBinaryString(testByte &
         // 0xFF)).replace(' ', '0');
         // vArgTest((testByte & 0xFF), testInt, s1);
-        vArgTest(fibbonaci(9));
+        vArgTest(fibbonaci(3));
     }
 
 }

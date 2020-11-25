@@ -1,0 +1,6 @@
+Java has signed bits.
+The first bit dictates positive or negative number.
+
+Conversion from Int to Byte just dumps the 1's and 0's into the byte, regardless of the sign.
+So  255 converts to 11111111 = -1, because 127 is the max positive value, -1 is the max neg. value.
+ 01111111, i.e. 127 converts to 127.

@@ -4,6 +4,13 @@ public class Lab4B {
 
     static Random randVal = new Random();
 
+    /**
+     * Scans array for max value, returns the sum of all elements. Prints the max
+     * value, min val. index and max val. index.
+     * 
+     * @param testArra
+     * @return int
+     */
     public static int quest1(int[] testArra) {
 
         int sum = 0, i = -1, minIndex = 0, maxIndex = 0, minVal, maxVal;
@@ -31,6 +38,11 @@ public class Lab4B {
         return sum;
     }
 
+    /**
+     * Sorts an array with the most basic implementation of swap sort.
+     * 
+     * @param testArra
+     */
     public static void SwapSort1(int[] testArra) {
 
         int i = -1, tempVar;
@@ -50,6 +62,11 @@ public class Lab4B {
         }
     }
 
+    /**
+     * Sorts an array with a swap sort that only performs one swap per cycle.
+     * 
+     * @param testArra
+     */
     public static void SwapSort2(int[] testArra) {
 
         int i = -1, tempVar;
@@ -72,6 +89,11 @@ public class Lab4B {
         }
     }
 
+    /**
+     * Basic bubblesort. Nothing fancy.
+     * 
+     * @param testArra
+     */
     public static void BubbleSort1(int[] testArra) {
 
         int tempVar;
@@ -89,6 +111,11 @@ public class Lab4B {
         }
     }
 
+    /**
+     * Basic bubblesort but it stops if the array is already sorted.
+     * 
+     * @param testArra
+     */
     public static void BubbleSort2(int[] testArra) {
 
         int tempVar;
@@ -109,6 +136,12 @@ public class Lab4B {
         }
     }
 
+    /**
+     * Bubblesort but the range of scan decreases with every iteration. It stops if
+     * already sorted.
+     * 
+     * @param testArra
+     */
     public static void BubbleSort3(int[] testArra) {
         int range = testArra.length, tempVar;
 
@@ -131,6 +164,12 @@ public class Lab4B {
         }
     }
 
+    /**
+     * Bubble sort. Range of scan decreases every iteration. Stops if already
+     * sorted. Only one swap per cycle.
+     * 
+     * @param testArra
+     */
     public static void BubbleSort4(int[] testArra) {
         int currLowInd = 0, currHighInd = testArra.length - 1, tempVar;
         while (currLowInd < currHighInd) {
@@ -158,6 +197,9 @@ public class Lab4B {
         }
     }
 
+    /**
+     * @param testArra
+     */
     public static void quest7(double[] testArra) {
         int arraCtr = 0;
         boolean subTen = true;

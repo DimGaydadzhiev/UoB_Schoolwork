@@ -5,6 +5,9 @@ public class Lab3B {
 
     static Scanner input = new Scanner(System.in);
 
+    /**
+     * Prompts for input. Checks if the input is "word"
+     */
     static void quest1() {
 
         String inputData;
@@ -21,6 +24,10 @@ public class Lab3B {
 
     }
 
+    /**
+     * Prompts for input. Checks and prints if the number is even, odd, positive,
+     * negative or 0
+     */
     static void quest2() {
         int inputVar;
 
@@ -45,6 +52,9 @@ public class Lab3B {
             System.out.println("The target is 0");
     }
 
+    /**
+     * Scans for input, checks if character is a,b,c,d,e.
+     */
     static void quest3() { // THIS ISNT MY CODE, DON'T JUDGE ME FOR THIS.
         char inData;
         System.out.println("Enter a single character:");
@@ -70,6 +80,9 @@ public class Lab3B {
         }
     }
 
+    /**
+     * Scans for input, prints out the pi digits from back to front.
+     */
     static void quest4() { // I WAS FORCED TO WRITE THIS
 
         System.out.println("INPUT STRING: ");

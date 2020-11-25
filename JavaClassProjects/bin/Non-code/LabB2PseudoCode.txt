@@ -1,0 +1,17 @@
+Make a list cardCatA.
+Make a list cardCatB.
+Make a variable cardVal
+Make a variable deckSize and assign it a value.
+
+While (deckSize> 0)
+    
+    Draw card from deck.
+
+        If (cardVariable is A-10)
+            THEN Store in list cardCatA.
+        else
+            THEN Store in list cardCatB.
+
+        Subtract 1 from deckSize 
+
+    return to start of loop
