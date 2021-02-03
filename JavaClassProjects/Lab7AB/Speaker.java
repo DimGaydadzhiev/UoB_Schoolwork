@@ -1,4 +1,4 @@
-package Lab7AB;
+package JavaClassProjects.Lab7AB;
 
 public class Speaker implements Talker {
 

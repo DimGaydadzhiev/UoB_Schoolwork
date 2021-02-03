@@ -1,4 +1,4 @@
-package Lab6AB;
+package JavaClassProjects.Lab6AB;
 
 public class PetRecord {
 

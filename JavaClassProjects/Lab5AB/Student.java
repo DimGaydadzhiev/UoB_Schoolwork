@@ -1,4 +1,4 @@
-package Lab5AB;
+package JavaClassProjects.Lab5AB;
 
 import java.util.ArrayList;
 

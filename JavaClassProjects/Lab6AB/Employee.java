@@ -1,4 +1,4 @@
-package Lab6AB;
+package JavaClassProjects.Lab6AB;
 
 class Employee { // this is an exercise class
 

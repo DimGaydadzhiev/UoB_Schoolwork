@@ -1,4 +1,4 @@
-package Lab7AB;
+package JavaClassProjects.Lab7AB;
 
 /**
  * Only supports the basic 4 cardinal directions. WEST and EAST are 0's as we
