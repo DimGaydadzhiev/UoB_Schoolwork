@@ -1,3 +1,5 @@
+package JavaClassProjects;
+
 import java.util.Scanner;
 
 public class Lab4A {

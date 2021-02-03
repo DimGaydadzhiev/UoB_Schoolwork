@@ -1,3 +1,5 @@
+package JavaClassProjects;
+
 public class Course {
 
     public int yearOfStudy;

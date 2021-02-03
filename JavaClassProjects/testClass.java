@@ -1,3 +1,4 @@
+package JavaClassProjects;
 
 import java.util.LinkedList;
 import java.util.Random;

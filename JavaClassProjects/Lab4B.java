@@ -1,3 +1,5 @@
+package JavaClassProjects;
+
 import java.util.Random;
 
 public class Lab4B {

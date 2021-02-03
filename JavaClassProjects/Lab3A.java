@@ -1,3 +1,5 @@
+package JavaClassProjects;
+
 public class Lab3A {
 
     public static void vArgTest(Object... number) {
